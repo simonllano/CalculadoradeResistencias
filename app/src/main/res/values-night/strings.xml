@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="band1">Banda 1</string>
+    <string name="band2">Banda 2</string>
+    <string name="resistance">Valor resistensia</string>
+    <string name="franja1">Banda #1</string>
+    <string name="franja2">Banda #2</string>
+    <string name="f">Banda #3</string>
+    <string name="f4">Banda #4</string>
+    <string name="info">Ingrese en orden el color de cada banda (franja de color)</string>
+    <string name="start">Start</string>
+    <string name="resistencia">Valor resistencia</string>
+    <string name="franja3">Multiplicador</string>
+    <string name="franja4">Tolerancia</string>
+</resources>
