@@ -5,6 +5,7 @@ import android.os.Bundle
 
 import com.simonllano.calculadoraderesistencias.databinding.ActivityMainBinding
 
+//Guardando features en practica2
 
 class MainActivity : AppCompatActivity() {
 
