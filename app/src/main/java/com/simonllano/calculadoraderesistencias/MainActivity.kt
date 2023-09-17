@@ -34,14 +34,12 @@ class MainActivity : AppCompatActivity() {
         val resultadoObserver = Observer<String> {resultado->  //Se crea el objeto observer
             resistorBinding.resistorTextView.setText(resultado.toString())
         }
-        mainViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con ...
 
-        val errorMsgObserver = Observer<String> {errorMsg ->
-            Snackbar.make(view, errorMsg, Snackbar.LENGTH_INDEFINITE)
-                .setAction( "Aceptar") {}
-                .show()
+        val errorMsgObserver = Observer<String> {_errorMsg ->
+            Snackbar.make(view, _errorMsg, Snackbar.LENGTH_INDEFINITE).setAction( "Aceptar"){}.show()
         }
 
+        mainViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con ...
 
 
     }

@@ -3,30 +3,29 @@ package com.simonllano.calculadoraderesistencias
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel //Libreria del view model
+import android.widget.Toast
+
 
 class MainViewModel : ViewModel() { //herencia del viewmdodel
 
-    val resultado: MutableLiveData<String> by lazy{
+     val resultado: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
 
-    val _errorMsg: MutableLiveData<String> by lazy{
+    private val _errorMsg: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
-
-    val colores = listOf<String>("Cafe","Rojo","Naranja","Amarillo","Verde","Azul","Violeta","Gris","Blanco")
 
     var banda1 = ""
     var banda2 = ""
     var multiplicador = ""
     var tolerancia = ""
-    var total=""
-
 
     fun codigoColores1(color1: String,banda: String) {
         if (color1=="Seleciona") {
             Log.d("error", "Hay empty")
             _errorMsg.value = "Debe digitar los dos numeros"
+
         }
 
         else{
